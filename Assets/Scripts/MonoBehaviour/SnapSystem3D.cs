@@ -70,6 +70,7 @@ public class SnapSystem3D : MonoBehaviour
             // Begin smoothly moving this object to the snap position
             isMovingToSnap = true;
         }
+        Debug.Log(isThisObjectInside);
     }
 
     void MoveTowardsSnapPosition()
