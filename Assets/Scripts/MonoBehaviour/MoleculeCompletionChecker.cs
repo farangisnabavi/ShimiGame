@@ -2,24 +2,33 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 
-// Attach this script to an empty GameObject that represents the "Molecule Manager"
-// for a specific puzzle (e.g., "Molecule_H2O_Checker").
+// Attach this to an empty GameObject that oversees ONE molecule puzzle
+// (e.g., "MoleculeChecker_NaCl", "MoleculeChecker_Water").
 //
-// This script does NOT control snapping, dragging, or triggers.
-// It only WATCHES the public "IsSnapped" property on each required SnapSystem3D
-// and reports when all of them are true.
+// This script coordinates two independent systems - PlacedElementsCollector
+// and MoleculeRecipeChecker - to decide when a molecule has been correctly
+// assembled. It does NOT contain any drag, trigger, or snap logic itself,
+// and it does not modify any of those other scripts.
 public class MoleculeCompletionChecker : MonoBehaviour
 {
-    [Header("Required Objects")]
-    [Tooltip("List every SnapSystem3D component that must be snapped for this puzzle to be complete.")]
+    [Header("Required Snapped Objects")]
+    [Tooltip("Every SnapSystem3D that must be snapped for this molecule to be considered placed.")]
     public List<SnapSystem3D> requiredSnapObjects = new List<SnapSystem3D>();
+
+    [Header("Recipe Validation References")]
+    [Tooltip("The collector that gathers ElementData from all currently snapped objects.")]
+    public PlacedElementsCollector placedElementsCollector;
+
+    [Tooltip("The checker that holds all valid molecule recipes and compares against them.")]
+    public MoleculeRecipeChecker moleculeRecipeChecker;
+
+    [Tooltip("The exact name of the recipe this checker should validate against (must match a recipe name in MoleculeRecipeChecker).")]
+    public string moleculeName;
 
     // Public property so other scripts can check completion state at any time
     public bool IsCompleted { get; private set; } = false;
 
-    // Public event that fires once, exactly when the molecule becomes complete.
-    // Other scripts (UI, level manager, etc.) can subscribe to this without
-    // this script needing to know they exist.
+    // Public event fired once, exactly when the molecule is correctly completed
     public event Action OnMoleculeCompleted;
 
     void Update()
@@ -31,33 +40,123 @@ public class MoleculeCompletionChecker : MonoBehaviour
         }
     }
 
-    // Checks whether every required object has snapped into place
+    // Main entry point: checks snapping first, then recipe validity
     void CheckCompletion()
     {
-        // Safety check: don't evaluate if no objects were assigned
-        if (requiredSnapObjects.Count == 0)
-            return;
+        // Step 1 & 2: make sure every required object is snapped
+        if (!AreAllObjectsSnapped())
+        {
+            return; // Not all pieces are in place yet - nothing more to check
+        }
 
-        // Loop through every required snap object
+        // Step 3: gather the currently placed elements
+        List<ElementData> placedElements = GetPlacedElementsSafely();
+        if (placedElements == null)
+        {
+            return; // Missing reference or collection failed - already logged inside the method
+        }
+
+        // Step 4 & 5: send the list to the recipe checker and read the result
+        bool isRecipeCorrect = CheckRecipeSafely(placedElements);
+
+        // Step 6 & 7: act on the result
+        if (isRecipeCorrect)
+        {
+            IsCompleted = true;
+            Debug.Log(moleculeName + " completed successfully! All elements match the recipe.");
+            OnMoleculeCompleted?.Invoke();
+        }
+        else
+        {
+            Debug.Log(moleculeName + " is not yet correct. All pieces are snapped, but the element combination does not match the recipe.");
+        }
+    }
+
+    // Checks whether every SnapSystem3D in the list is currently snapped.
+    // Returns false immediately if the list is empty or any reference is missing.
+    bool AreAllObjectsSnapped()
+    {
+        if (requiredSnapObjects.Count == 0)
+        {
+            Debug.LogWarning(gameObject.name + ": No required snap objects assigned.");
+            return false;
+        }
+
         foreach (SnapSystem3D snapObject in requiredSnapObjects)
         {
-            // If any reference is missing or not yet snapped, the molecule isn't complete
-            if (snapObject == null || !snapObject.IsSnapped)
+            if (snapObject == null)
             {
-                return; // Exit early - not all objects are placed yet
+                Debug.LogWarning(gameObject.name + ": A required snap object reference is missing (null).");
+                return false;
+            }
+
+            if (!snapObject.IsSnapped)
+            {
+                // Not an error - this simply means the puzzle isn't finished yet
+                return false;
             }
         }
 
-        // If we reach this point, every object in the list is snapped correctly
-        IsCompleted = true;
+        foreach (SnapSystem3D snapObject in requiredSnapObjects)
+        {
+            if (snapObject == null)
+            {
+                Debug.LogWarning(gameObject.name + ": A required snap object reference is missing (null).");
+                return false;
+            }
 
-        // Notify any listening scripts that the molecule is now complete
-        OnMoleculeCompleted?.Invoke();
+            Debug.Log("IsSnapped: " + snapObject.IsSnapped);
+
+            if (!snapObject.IsSnapped)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 
-    // Optional public method other scripts can call to manually re-check completion
-    // (useful if objects can be reset or unsnapped in the future)
-    public bool CheckIfCompletedNow()
+    // Safely retrieves the placed elements list, with null checks and logging.
+    // Returns null if the collector reference is missing so the caller can bail out cleanly.
+    List<ElementData> GetPlacedElementsSafely()
+    {
+        if (placedElementsCollector == null)
+        {
+            Debug.LogWarning(gameObject.name + ": Placed Elements Collector reference is missing.");
+            return null;
+        }
+
+        List<ElementData> placedElements = placedElementsCollector.GetPlacedElements();
+
+        if (placedElements == null || placedElements.Count == 0)
+        {
+            Debug.Log(gameObject.name + ": No elements were collected yet.");
+        }
+
+        return placedElements;
+    }
+
+    // Safely calls the recipe checker, with null checks and logging.
+    // Returns false if the recipe checker reference is missing or the name is empty.
+    bool CheckRecipeSafely(List<ElementData> placedElements)
+    {
+        if (moleculeRecipeChecker == null)
+        {
+            Debug.LogWarning(gameObject.name + ": Molecule Recipe Checker reference is missing.");
+            return false;
+        }
+
+        if (string.IsNullOrEmpty(moleculeName))
+        {
+            Debug.LogWarning(gameObject.name + ": Molecule Name is empty - cannot look up a recipe.");
+            return false;
+        }
+
+        return moleculeRecipeChecker.CheckMolecule(moleculeName, placedElements);
+    }
+
+    // Optional public method other scripts can call to manually force a re-check
+    public bool CheckNow()
     {
         CheckCompletion();
         return IsCompleted;
