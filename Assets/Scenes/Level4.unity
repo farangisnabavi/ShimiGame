@@ -132,6 +132,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1564612105}
     - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
+      propertyPath: lockAfterSnap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
       propertyPath: targetTrigger
       value: 
       objectReference: {fileID: 1564612106}
@@ -271,6 +275,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 264392299}
     - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
+      propertyPath: lockAfterSnap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
       propertyPath: targetTrigger
       value: 
       objectReference: {fileID: 264392300}
@@ -338,6 +346,10 @@ PrefabInstance:
       propertyPath: snapPosition
       value: 
       objectReference: {fileID: 1587261015}
+    - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
+      propertyPath: lockAfterSnap
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
       propertyPath: targetTrigger
       value: 
@@ -1566,6 +1578,10 @@ PrefabInstance:
       propertyPath: snapPosition
       value: 
       objectReference: {fileID: 1985069029}
+    - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
+      propertyPath: lockAfterSnap
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1467194148821270908, guid: fb37005a8b5b7614fa56958ef24e223e, type: 3}
       propertyPath: targetTrigger
       value: 
