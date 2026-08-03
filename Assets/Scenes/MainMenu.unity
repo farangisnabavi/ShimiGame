@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuManager
   gameplaySceneName: Level1
   settingsPanel: {fileID: 1901135166}
-  transitionDuration: 0.25
+  transitionDuration: 0.75
   closedScale: 0.9
 --- !u!4 &277317725
 Transform:
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuManager
   gameplaySceneName: SelectLevel
   settingsPanel: {fileID: 1901135166}
-  transitionDuration: 0.25
+  transitionDuration: 0.75
   closedScale: 0.9
 --- !u!4 &1168306306
 Transform:
