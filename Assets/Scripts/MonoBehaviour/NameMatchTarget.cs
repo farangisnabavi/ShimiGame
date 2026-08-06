@@ -70,6 +70,15 @@ public class NameMatchTarget : MonoBehaviour
     {
         DraggableElement draggable = droppedObject.GetComponent<DraggableElement>();
 
+        Debug.Log(
+        "CHECK MATCH | " +
+        "Object: " + droppedObject.name +
+        " | Draggable: " + (draggable != null) +
+        " | Assigned Element: " +
+        (draggable != null && draggable.assignedElement != null) +
+        " | Expected Element: " +
+        (expectedElement != null));
+
         // Safety check: make sure both elements are actually assigned
         if (draggable == null || draggable.assignedElement == null || expectedElement == null)
             return;
