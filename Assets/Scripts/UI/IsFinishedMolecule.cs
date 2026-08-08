@@ -21,6 +21,12 @@ public class IsFinished : MonoBehaviour
 
     //Checking if level is finished
     private bool IsItFinished(){
+
+        if (moleculeCheckers == null || moleculeCheckers.Count == 0)
+        {
+            return false;
+        }
+
         foreach (MoleculeCompletionChecker checker in moleculeCheckers)
         {
             if (!checker.IsCompleted)
