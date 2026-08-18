@@ -15,4 +15,4 @@ MonoBehaviour:
   elementName: Sodium
   symbol: Na
   atomicNumber: 11
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 8771091787928289351, guid: 3dfb4f54eb50fd44690758fe5c1b357f, type: 3}
