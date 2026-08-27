@@ -1,48 +1,30 @@
 using UnityEngine;
 using PeriodicTableSystem.Data;
+using PeriodicTableSystem.World;
 
 namespace PeriodicTableSystem.Spawning
 {
-    /// <summary>
-    /// Isolated spawner for the Periodic Table system.
-    ///
-    /// Sole responsibility: given a PeriodicElementData, instantiate a new,
-    /// independent GameObject from its 3D prefab. No limits, no counting,
-    /// no chemistry logic, no dependency on any existing gameplay script.
-    /// </summary>
     public class PeriodicElementSpawner : MonoBehaviour
     {
-        [Header("Optional Parent")]
-        [Tooltip("Optional parent transform for spawned elements (e.g. PeriodicElementContainer). " +
-                 "If left empty, spawned elements are placed at the scene root.")]
-        [SerializeField] private Transform spawnContainer;
-
-        /// <summary>
-        /// Creates a brand new, independent instance of the given element's 3D prefab.
-        /// Safe to call repeatedly with the same PeriodicElementData — every call
-        /// produces a separate GameObject.
-        /// </summary>
-        /// <param name="elementData">The data describing which element to spawn.</param>
-        /// <returns>The newly instantiated GameObject, or null if spawning was not possible.</returns>
-        public GameObject SpawnElement(PeriodicElementData elementData)
+        [Header("Settings")]
+        [SerializeField] private float spawnHeightOffset = 0.5f;
+        
+        public GameObject SpawnElement(PeriodicElementData data, Vector3 position)
         {
-            if (elementData == null)
-            {
-                Debug.LogWarning("[PeriodicElementSpawner] SpawnElement called with a null PeriodicElementData.");
-                return null;
-            }
+            if (data?.prefab3D == null) return null;
 
-            if (elementData.Prefab3D == null)
-            {
-                Debug.LogWarning($"[PeriodicElementSpawner] '{elementData.ElementName}' has no 3D Prefab assigned.");
-                return null;
-            }
-
-            GameObject spawnedInstance = spawnContainer != null
-                ? Instantiate(elementData.Prefab3D, spawnContainer)
-                : Instantiate(elementData.Prefab3D);
-
-            return spawnedInstance;
+            Vector3 spawnPos = position + Vector3.up * spawnHeightOffset;
+            GameObject instance = Instantiate(data.prefab3D, spawnPos, Quaternion.identity);
+            instance.name = $"{data.symbol}_{data.atomicNumber}";
+            
+            PeriodicElementInstance elementInstance = instance.GetComponent<PeriodicElementInstance>();
+            if (elementInstance == null) elementInstance = instance.AddComponent<PeriodicElementInstance>();
+            elementInstance.AssignElementData(data);
+            
+            if (instance.GetComponent<PeriodicWorldElementDrag>() == null)
+                instance.AddComponent<PeriodicWorldElementDrag>();
+            
+            return instance;
         }
     }
 }

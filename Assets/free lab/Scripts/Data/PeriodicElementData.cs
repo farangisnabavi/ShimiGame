@@ -2,37 +2,30 @@ using UnityEngine;
 
 namespace PeriodicTableSystem.Data
 {
-    /// <summary>
-    /// Isolated data definition for a single periodic table element.
-    /// This is a pure data container (ScriptableObject) — it does NOT
-    /// represent a spawned instance, and it is never modified at runtime.
-    ///
-    /// This class is intentionally separate from any existing "ElementData"
-    /// class in the project. It has no dependency on, and no relationship
-    /// to, existing gameplay scripts.
-    /// </summary>
-    [CreateAssetMenu(
-        fileName = "NewPeriodicElement",
-        menuName = "PeriodicTableSystem/Periodic Element Data")]
+    [CreateAssetMenu(fileName = "NewElement", menuName = "PeriodicTableSystem/ElementData")]
     public class PeriodicElementData : ScriptableObject
     {
         [Header("Identity")]
-        [Tooltip("Full name of the element, e.g. 'Sodium'.")]
-        [SerializeField] private string elementName;
-
-        [Tooltip("Chemical symbol, e.g. 'Na'.")]
-        [SerializeField] private string symbol;
-
-        [Tooltip("Atomic number, e.g. 11 for Sodium.")]
-        [SerializeField] private int atomicNumber;
-
-        [Header("Visual Representation")]
-        [Tooltip("The 3D prefab that will be instantiated when this element is spawned.")]
-        [SerializeField] private GameObject prefab3D;
-
-        public string ElementName => elementName;
-        public string Symbol => symbol;
-        public int AtomicNumber => atomicNumber;
-        public GameObject Prefab3D => prefab3D;
+        public string elementName;
+        public string symbol;
+        public int atomicNumber;
+        
+        [Header("Visual")]
+        public GameObject prefab3D;
+        public Color elementColor = Color.white;
+        
+        [Header("Electron Configuration")]
+        [Range(1, 8)]
+        public int valenceElectrons = 1;
+        
+        [Tooltip("Usually 8 - valence for non-metals (except H=1). For metals: valence electrons.")]
+        public int maxBonds = 1;
+        
+        [Header("Bonding Properties")]
+        [Range(0.7f, 4.0f)]
+        public float electronegativity = 2.1f;
+        
+        public bool isMetal = false;
+        public float atomicRadius = 0.5f;
     }
 }
