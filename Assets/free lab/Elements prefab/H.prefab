@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8260873910471169899
+--- !u!1001 &489328413233153734
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3910990755373119420, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.25
+      value: -31.239088
       objectReference: {fileID: 0}
     - target: {fileID: -3910990755373119420, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.72
+      value: 0.008855444
       objectReference: {fileID: 0}
     - target: {fileID: -3910990755373119420, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8342975
+      value: 34.928406
       objectReference: {fileID: 0}
     - target: {fileID: -3910990755373119420, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -82,26 +82,42 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8771091787928289351, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1434118726907799832}
+      addedObject: {fileID: 7640754208061009262}
     - targetCorrespondingSourceObject: {fileID: 8771091787928289351, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 810862071872737894}
+      addedObject: {fileID: 5602713260628664617}
     - targetCorrespondingSourceObject: {fileID: 8771091787928289351, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -5165230312276465580}
+      addedObject: {fileID: 1101023716873221351}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
---- !u!1 &800981641683195692 stripped
+--- !u!1 &9183785340174550657 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8771091787928289351, guid: 09c407e385216e845a4687db7c96a17d, type: 3}
-  m_PrefabInstance: {fileID: 8260873910471169899}
+  m_PrefabInstance: {fileID: 489328413233153734}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1434118726907799832
+--- !u!114 &7640754208061009262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9183785340174550657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d3f3aa7ffe45049807368064932810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeriodicTableSystem.World.PeriodicWorldElementDrag
+  dragHeight: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!54 &5602713260628664617
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800981641683195692}
+  m_GameObject: {fileID: 9183785340174550657}
   serializedVersion: 5
   m_Mass: 1
   m_LinearDamping: 0
@@ -122,13 +138,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &810862071872737894
+--- !u!135 &1101023716873221351
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800981641683195692}
+  m_GameObject: {fileID: 9183785340174550657}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -142,20 +158,4 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 1.5
-  m_Center: {x: 3, y: 0.5, z: 0.6}
---- !u!114 &-5165230312276465580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800981641683195692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d3f3aa7ffe45049807368064932810, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PeriodicTableSystem.World.PeriodicWorldElementDrag
-  dragHeight: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  m_Center: {x: 3, y: 0, z: 1}

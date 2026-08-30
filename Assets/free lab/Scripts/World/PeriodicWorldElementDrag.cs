@@ -22,11 +22,15 @@ namespace PeriodicTableSystem.World
         {
             isDragging = true;
             if (rb != null) rb.isKinematic = true;
-            
+    
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer))
+            {
                 offset = transform.position - hit.point;
+                offset.y = 0; 
+            }
         }
+
 
         void OnMouseDrag()
         {
