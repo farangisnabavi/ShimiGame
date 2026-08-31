@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8796d9abd14b12247815d5b2c471b542, type: 3}
-  m_Name: H
+  m_Name: Element_042_Mo
   m_EditorClassIdentifier: Assembly-CSharp::PeriodicTableSystem.Data.PeriodicElementData
-  elementName: Hydrogen
-  symbol: H
-  atomicNumber: 1
-  prefab3D: {fileID: 800981641683195692, guid: 46015b7e943c317498f4eee339ce02fe, type: 3}
-  elementColor: {r: 1, g: 1, b: 1, a: 1}
+  elementName: Molybdenum
+  symbol: Mo
+  atomicNumber: 42
+  prefab3D: {fileID: 0}
+  elementColor: {r: 0.33, g: 0.71, b: 0.71, a: 1}
   valenceElectrons: 1
-  maxBonds: 1
-  electronegativity: 2.2
-  isMetal: 0
-  atomicRadius: 0.5
+  maxBonds: 2
+  electronegativity: 2.16
+  isMetal: 1
+  atomicRadius: 1.9
