@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Tellurium
   symbol: Te
   atomicNumber: 52
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2820612657278477785, guid: 504017bdd1d862f439acb83561a0ff0a, type: 3}
   elementColor: {r: 0.83, g: 0.48, b: 0, a: 1}
   valenceElectrons: 6
   maxBonds: 2

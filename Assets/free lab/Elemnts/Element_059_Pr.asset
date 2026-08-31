@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Praseodymium
   symbol: Pr
   atomicNumber: 59
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3287212632139639594, guid: 3c07916106235a34399d6a57f7a8e9dc, type: 3}
   elementColor: {r: 0.85, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

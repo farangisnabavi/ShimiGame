@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Tantalum
   symbol: Ta
   atomicNumber: 73
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7086093478369119786, guid: 1b6ae93fa1acc2440a956df8094e67ba, type: 3}
   elementColor: {r: 0.3, g: 0.65, b: 1, a: 1}
   valenceElectrons: 2
   maxBonds: 2

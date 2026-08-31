@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Iridium
   symbol: Ir
   atomicNumber: 77
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 532624759559472455, guid: a2179153fd820ff47832538723b1937c, type: 3}
   elementColor: {r: 0.09, g: 0.33, b: 0.53, a: 1}
   valenceElectrons: 2
   maxBonds: 2

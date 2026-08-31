@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Tin
   symbol: Sn
   atomicNumber: 50
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2792298242734712524, guid: 6ab8dd6235f255443bb52a4af023da7b, type: 3}
   elementColor: {r: 0.4, g: 0.5, b: 0.5, a: 1}
   valenceElectrons: 4
   maxBonds: 4

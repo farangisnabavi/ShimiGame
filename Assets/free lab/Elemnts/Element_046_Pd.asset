@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Palladium
   symbol: Pd
   atomicNumber: 46
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4300322954736186310, guid: 2c8263dfcf4aa4b48a708a6e4406079c, type: 3}
   elementColor: {r: 0, g: 0.41, b: 0.52, a: 1}
   valenceElectrons: 2
   maxBonds: 2

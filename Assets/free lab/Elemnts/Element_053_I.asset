@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Iodine
   symbol: I
   atomicNumber: 53
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 8771091787928289351, guid: 98be890074321b245a85759ae72456e8, type: 3}
   elementColor: {r: 0.58, g: 0, b: 0.58, a: 1}
   valenceElectrons: 7
   maxBonds: 1

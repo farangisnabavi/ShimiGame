@@ -29,5 +29,8 @@ namespace PeriodicTableSystem.Data
             if (atomicNumberText != null) atomicNumberText.text = elementData.atomicNumber.ToString();
             if (backgroundImage != null) backgroundImage.color = elementData.elementColor;
         }
+        
+        public void Setup(PeriodicElementData data) => AssignData(data);
+
     }
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Indium
   symbol: In
   atomicNumber: 49
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3887755729663740416, guid: 4684d6f40d3f0c3439f0f910e84b4f9a, type: 3}
   elementColor: {r: 0.65, g: 0.46, b: 0.45, a: 1}
   valenceElectrons: 3
   maxBonds: 3

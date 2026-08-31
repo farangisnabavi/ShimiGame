@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Oxygen
   symbol: O
   atomicNumber: 8
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5456467706643592836, guid: 16b224167829c7349aca3eb2aa46ce58, type: 3}
   elementColor: {r: 1, g: 0.05, b: 0.05, a: 1}
   valenceElectrons: 6
   maxBonds: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Strontium
   symbol: Sr
   atomicNumber: 38
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6070762027223355800, guid: af7d744d8f2dad14695fe359f84f28f4, type: 3}
   elementColor: {r: 0, g: 1, b: 0, a: 1}
   valenceElectrons: 2
   maxBonds: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Arsenic
   symbol: As
   atomicNumber: 33
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3867890697862535737, guid: 6502e97c6e3dbcd4ea54c76c23b7742c, type: 3}
   elementColor: {r: 0.74, g: 0.5, b: 0.89, a: 1}
   valenceElectrons: 5
   maxBonds: 3

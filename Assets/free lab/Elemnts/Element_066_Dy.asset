@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Dysprosium
   symbol: Dy
   atomicNumber: 66
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6138851781173734367, guid: 6be83e9650fc2ec4b81f28f5d6dd0da9, type: 3}
   elementColor: {r: 0.12, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

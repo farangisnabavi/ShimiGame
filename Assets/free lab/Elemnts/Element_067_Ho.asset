@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Holmium
   symbol: Ho
   atomicNumber: 67
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4639041325322415206, guid: 155f32ae14cfe384ea1f1f82f7e11e3e, type: 3}
   elementColor: {r: 0, g: 1, b: 0.61, a: 1}
   valenceElectrons: 2
   maxBonds: 2

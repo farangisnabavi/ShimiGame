@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Rubidium
   symbol: Rb
   atomicNumber: 37
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 488317296490270882, guid: 1078da9892057664391aa26953844410, type: 3}
   elementColor: {r: 0.44, g: 0.18, b: 0.69, a: 1}
   valenceElectrons: 1
   maxBonds: 1

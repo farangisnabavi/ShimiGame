@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Boron
   symbol: B
   atomicNumber: 5
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3329320742924001070, guid: a841839bf0923ba4ea768367c7c0cdee, type: 3}
   elementColor: {r: 1, g: 0.71, b: 0.71, a: 1}
   valenceElectrons: 3
   maxBonds: 3

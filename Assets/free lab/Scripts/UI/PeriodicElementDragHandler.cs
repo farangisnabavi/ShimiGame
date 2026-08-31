@@ -15,7 +15,8 @@ namespace PeriodicTableSystem.UI
 
         private PeriodicTableElementItem item;
         private GameObject preview;
-
+        [SerializeField] private GameObject panel;
+        
         private void Awake()
         {
             item = GetComponent<PeriodicTableElementItem>();
@@ -29,6 +30,7 @@ namespace PeriodicTableSystem.UI
             preview = Instantiate(item.elementData.prefab3D);
             preview.name = $"Preview_{item.elementData.symbol}";
             SetPreviewMode(preview, true);
+            
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -38,6 +40,7 @@ namespace PeriodicTableSystem.UI
             Plane plane = new Plane(Vector3.up, Vector3.zero);
             if (plane.Raycast(ray, out float distance))
                 preview.transform.position = ray.GetPoint(distance);
+
         }
 
         public void OnEndDrag(PointerEventData eventData)
@@ -50,6 +53,7 @@ namespace PeriodicTableSystem.UI
 
             if (valid && spawner != null)
                 spawner.SpawnElement(item.elementData, position);
+           
         }
 
         private void SetPreviewMode(GameObject obj, bool isPreview)
@@ -61,6 +65,7 @@ namespace PeriodicTableSystem.UI
             }
             foreach (var c in obj.GetComponentsInChildren<Collider>())
                 c.enabled = !isPreview;
+           
         }
     }
 }

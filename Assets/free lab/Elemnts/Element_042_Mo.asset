@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Molybdenum
   symbol: Mo
   atomicNumber: 42
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 9207420041346037456, guid: 3adb1691321fc234c9c7a94a88285ed1, type: 3}
   elementColor: {r: 0.33, g: 0.71, b: 0.71, a: 1}
   valenceElectrons: 1
   maxBonds: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Xenon
   symbol: Xe
   atomicNumber: 54
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5837594197747255819, guid: d5e2fd022c2177f45855c581d12c8aa3, type: 3}
   elementColor: {r: 0.26, g: 0.62, b: 0.69, a: 1}
   valenceElectrons: 8
   maxBonds: 0

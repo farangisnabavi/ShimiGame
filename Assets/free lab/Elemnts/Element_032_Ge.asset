@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Germanium
   symbol: Ge
   atomicNumber: 32
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5393070421611054213, guid: 2cc6dccc90aedff488674625ad8372af, type: 3}
   elementColor: {r: 0.4, g: 0.56, b: 0.56, a: 1}
   valenceElectrons: 4
   maxBonds: 4

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Potassium
   symbol: K
   atomicNumber: 19
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3721389002863460576, guid: dcc5abe638862914ea137636c970b88b, type: 3}
   elementColor: {r: 0.56, g: 0.25, b: 0.83, a: 1}
   valenceElectrons: 1
   maxBonds: 1

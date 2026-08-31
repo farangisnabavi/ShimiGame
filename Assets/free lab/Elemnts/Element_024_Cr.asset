@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Chromium
   symbol: Cr
   atomicNumber: 24
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2496881972237809995, guid: b4fe24fee6627bd428e1e7f259ed1077, type: 3}
   elementColor: {r: 0.54, g: 0.6, b: 0.78, a: 1}
   valenceElectrons: 1
   maxBonds: 2

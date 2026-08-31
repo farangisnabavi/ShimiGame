@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Cadmium
   symbol: Cd
   atomicNumber: 48
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6921924394331706463, guid: 034f62838ad72104697e78043aae7954, type: 3}
   elementColor: {r: 1, g: 0.85, b: 0.56, a: 1}
   valenceElectrons: 2
   maxBonds: 2

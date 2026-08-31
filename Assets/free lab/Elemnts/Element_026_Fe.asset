@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Iron
   symbol: Fe
   atomicNumber: 26
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2845747592459254147, guid: b863b36a46b41514a9d9626480db84d0, type: 3}
   elementColor: {r: 0.88, g: 0.4, b: 0.2, a: 1}
   valenceElectrons: 2
   maxBonds: 2

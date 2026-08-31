@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Platinum
   symbol: Pt
   atomicNumber: 78
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4918162378569528633, guid: f913cd2c13740f5449b85cfece55adfb, type: 3}
   elementColor: {r: 0.82, g: 0.82, b: 0.88, a: 1}
   valenceElectrons: 1
   maxBonds: 2

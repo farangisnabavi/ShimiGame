@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Hafnium
   symbol: Hf
   atomicNumber: 72
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 535388716594716727, guid: 2cbfaa883c34a174cbbe93fb3345c59e, type: 3}
   elementColor: {r: 0.3, g: 0.76, b: 1, a: 1}
   valenceElectrons: 2
   maxBonds: 2

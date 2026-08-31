@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Sodium
   symbol: Na
   atomicNumber: 11
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7476301656930749356, guid: 33dfdbff9c0b9004a9838b27116cb5a6, type: 3}
   elementColor: {r: 0.67, g: 0.36, b: 0.95, a: 1}
   valenceElectrons: 1
   maxBonds: 1

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Calcium
   symbol: Ca
   atomicNumber: 20
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 592496176254392876, guid: e4f511fd4ad6c554e959e468564066fe, type: 3}
   elementColor: {r: 0.24, g: 1, b: 0, a: 1}
   valenceElectrons: 2
   maxBonds: 2

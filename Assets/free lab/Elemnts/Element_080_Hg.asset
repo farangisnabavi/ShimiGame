@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Mercury
   symbol: Hg
   atomicNumber: 80
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5980030772733350014, guid: 7d82a021ef98d7c4ba6563781e865346, type: 3}
   elementColor: {r: 0.72, g: 0.72, b: 0.82, a: 1}
   valenceElectrons: 2
   maxBonds: 2

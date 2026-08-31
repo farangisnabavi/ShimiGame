@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Francium
   symbol: Fr
   atomicNumber: 87
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4661295740728598710, guid: 45f2df75d54039b439139df2dc227398, type: 3}
   elementColor: {r: 0.26, g: 0, b: 0.4, a: 1}
   valenceElectrons: 1
   maxBonds: 1

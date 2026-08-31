@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Europium
   symbol: Eu
   atomicNumber: 63
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7306467141820634518, guid: 010daf8e0bf38ce49a4852ff6fc05abd, type: 3}
   elementColor: {r: 0.38, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

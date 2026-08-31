@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Technetium
   symbol: Tc
   atomicNumber: 43
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4731487418629612371, guid: e5d87bdeb0f774043abb43eb4f17fb32, type: 3}
   elementColor: {r: 0.23, g: 0.62, b: 0.62, a: 1}
   valenceElectrons: 2
   maxBonds: 2

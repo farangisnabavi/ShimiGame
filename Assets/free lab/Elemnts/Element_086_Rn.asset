@@ -15,10 +15,10 @@ MonoBehaviour:
   elementName: Radon
   symbol: Rn
   atomicNumber: 86
-  prefab3D: {fileID: 0}
-  elementColor: {r: 0.26, g: 0.51, b: 0.59, a: 1}
+  prefab3D: {fileID: 3204388139748207929, guid: 7bb5e127b7a5aea4c80f44a750e72c95, type: 3}
+  elementColor: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 1}
   valenceElectrons: 8
   maxBonds: 0
-  electronegativity: 0
+  electronegativity: 0.7
   isMetal: 0
   atomicRadius: 1.2

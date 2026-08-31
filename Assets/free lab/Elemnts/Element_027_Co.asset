@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Cobalt
   symbol: Co
   atomicNumber: 27
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 8533070546726864179, guid: d7da639949440a142b89d29ff47a7b62, type: 3}
   elementColor: {r: 0.94, g: 0.56, b: 0.63, a: 1}
   valenceElectrons: 2
   maxBonds: 2

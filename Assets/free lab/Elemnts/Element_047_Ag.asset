@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Silver
   symbol: Ag
   atomicNumber: 47
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6397206901470786708, guid: e1d28b3a4c6ee5e4e910f0e2f69e5a02, type: 3}
   elementColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}
   valenceElectrons: 1
   maxBonds: 2

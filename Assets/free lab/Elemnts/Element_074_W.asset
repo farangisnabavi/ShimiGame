@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Tungsten
   symbol: W
   atomicNumber: 74
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2950159666269081207, guid: 39023ea5799037c43bbd24f9e9538b08, type: 3}
   elementColor: {r: 0.13, g: 0.58, b: 0.84, a: 1}
   valenceElectrons: 2
   maxBonds: 2

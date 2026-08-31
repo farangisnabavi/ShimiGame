@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Thulium
   symbol: Tm
   atomicNumber: 69
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7108873471391546228, guid: 1b6450c8caa9b83429ce3ffbc64da182, type: 3}
   elementColor: {r: 0, g: 0.83, b: 0.32, a: 1}
   valenceElectrons: 2
   maxBonds: 2

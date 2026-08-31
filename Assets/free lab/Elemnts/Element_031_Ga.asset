@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Gallium
   symbol: Ga
   atomicNumber: 31
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7354484639930199821, guid: b5daff3dce9299f4488601aaf28e56ff, type: 3}
   elementColor: {r: 0.76, g: 0.56, b: 0.56, a: 1}
   valenceElectrons: 3
   maxBonds: 3

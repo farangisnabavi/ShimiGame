@@ -15,10 +15,10 @@ MonoBehaviour:
   elementName: Krypton
   symbol: Kr
   atomicNumber: 36
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5444977853908815533, guid: 733d59f101070c349af6f7f15cdd028e, type: 3}
   elementColor: {r: 0.36, g: 0.72, b: 0.82, a: 1}
   valenceElectrons: 8
   maxBonds: 0
-  electronegativity: 0
+  electronegativity: 0.7
   isMetal: 0
   atomicRadius: 0.88

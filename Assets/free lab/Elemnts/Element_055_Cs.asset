@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Cesium
   symbol: Cs
   atomicNumber: 55
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7238437316332705471, guid: a0b3184b8cce1ae4a910feb68d7b5b83, type: 3}
   elementColor: {r: 0.34, g: 0.09, b: 0.56, a: 1}
   valenceElectrons: 1
   maxBonds: 1

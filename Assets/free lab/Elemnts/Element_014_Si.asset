@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Silicon
   symbol: Si
   atomicNumber: 14
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3760234080445566400, guid: 815a22c9848dcdf41b1a02b0a3d1b79c, type: 3}
   elementColor: {r: 0.94, g: 0.78, b: 0.63, a: 1}
   valenceElectrons: 4
   maxBonds: 4

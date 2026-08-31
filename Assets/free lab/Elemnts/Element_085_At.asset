@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Astatine
   symbol: At
   atomicNumber: 85
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7905373469735300959, guid: ba4ffaa2df6efab448301b7ed744a051, type: 3}
   elementColor: {r: 0.46, g: 0.31, b: 0.27, a: 1}
   valenceElectrons: 7
   maxBonds: 1

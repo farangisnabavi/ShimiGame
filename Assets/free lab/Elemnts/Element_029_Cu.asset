@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Copper
   symbol: Cu
   atomicNumber: 29
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 900310463771652750, guid: bceccd19e46cc164bae4782e86dbd3be, type: 3}
   elementColor: {r: 0.78, g: 0.5, b: 0.2, a: 1}
   valenceElectrons: 1
   maxBonds: 2

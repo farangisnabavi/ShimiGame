@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Sulfur
   symbol: S
   atomicNumber: 16
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2637965625778532153, guid: 2ba5ca878650320428ee231577a520fb, type: 3}
   elementColor: {r: 1, g: 1, b: 0.19, a: 1}
   valenceElectrons: 6
   maxBonds: 6

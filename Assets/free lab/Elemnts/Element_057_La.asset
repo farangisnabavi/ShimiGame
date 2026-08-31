@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Lanthanum
   symbol: La
   atomicNumber: 57
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 8691622766984832056, guid: 1a32ad0e7685e634ba8b086c82e97ff8, type: 3}
   elementColor: {r: 0.44, g: 0.83, b: 1, a: 1}
   valenceElectrons: 2
   maxBonds: 2

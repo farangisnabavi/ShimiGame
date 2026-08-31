@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Manganese
   symbol: Mn
   atomicNumber: 25
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6698223712538208892, guid: c09610bbe84f5594b8279b03fe1f5129, type: 3}
   elementColor: {r: 0.61, g: 0.48, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

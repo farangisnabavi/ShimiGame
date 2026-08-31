@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using PeriodicTableSystem.World;
+using TMPro;
 
 namespace PeriodicTableSystem.Chemistry
 {
@@ -11,6 +12,7 @@ namespace PeriodicTableSystem.Chemistry
         [SerializeField] private float bondCheckRadius = 2f;
         [SerializeField] private float bondDistanceThreshold = 1.5f;
         [SerializeField] private LayerMask elementLayer;
+        [SerializeField] private TextMeshProUGUI createdWhat;
         
         private List<PeriodicElementInstance> activeElements = new List<PeriodicElementInstance>();
         
@@ -82,6 +84,7 @@ namespace PeriodicTableSystem.Chemistry
             {
                 string formula = GenerateFormula(molecule);
                 Debug.Log($"<color=green>Stable molecule: {formula}</color>");
+                createdWhat.text = "Created: "+formula;
             }
         }
         

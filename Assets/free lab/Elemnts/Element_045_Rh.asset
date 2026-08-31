@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Rhodium
   symbol: Rh
   atomicNumber: 45
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 1291055406083551328, guid: 4f9160634cc6d1842b6c834e8dd8654d, type: 3}
   elementColor: {r: 0.04, g: 0.49, b: 0.55, a: 1}
   valenceElectrons: 1
   maxBonds: 2

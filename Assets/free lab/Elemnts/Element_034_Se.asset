@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Selenium
   symbol: Se
   atomicNumber: 34
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7025705079016021039, guid: 1059cc1b2424fbe48a4742923adbcf4a, type: 3}
   elementColor: {r: 1, g: 0.63, b: 0, a: 1}
   valenceElectrons: 6
   maxBonds: 2

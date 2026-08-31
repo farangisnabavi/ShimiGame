@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Uranium
   symbol: U
   atomicNumber: 92
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 879037690090577090, guid: a76466f91e36f9d45a71f9795fb8656e, type: 3}
   elementColor: {r: 0, g: 0.56, b: 1, a: 1}
   valenceElectrons: 2
   maxBonds: 2

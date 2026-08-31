@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Neodymium
   symbol: Nd
   atomicNumber: 60
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2329741977535103075, guid: bf093bb7a03f83e489b79cb75aed99ed, type: 3}
   elementColor: {r: 0.78, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

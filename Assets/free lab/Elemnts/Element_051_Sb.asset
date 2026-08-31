@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Antimony
   symbol: Sb
   atomicNumber: 51
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 165784909291283700, guid: a10d0b5d92e1f7b4bb9386a9173afb4a, type: 3}
   elementColor: {r: 0.62, g: 0.39, b: 0.71, a: 1}
   valenceElectrons: 5
   maxBonds: 3

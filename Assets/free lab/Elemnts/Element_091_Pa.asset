@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Protactinium
   symbol: Pa
   atomicNumber: 91
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3981534848902341333, guid: cd922b842ab8e6341958e1e14bab36ca, type: 3}
   elementColor: {r: 0, g: 0.63, b: 1, a: 1}
   valenceElectrons: 2
   maxBonds: 2

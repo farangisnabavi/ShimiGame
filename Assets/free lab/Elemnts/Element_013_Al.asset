@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Aluminum
   symbol: Al
   atomicNumber: 13
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7392074690120731245, guid: c1b8a644bd5f6cd45b8a9ab5b370cbf9, type: 3}
   elementColor: {r: 0.75, g: 0.65, b: 0.65, a: 1}
   valenceElectrons: 3
   maxBonds: 3

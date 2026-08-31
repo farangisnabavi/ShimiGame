@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Hydrogen
   symbol: H
   atomicNumber: 1
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 9183785340174550657, guid: 640a0d8bef1dd814cb13dca0abc6106c, type: 3}
   elementColor: {r: 1, g: 1, b: 1, a: 1}
   valenceElectrons: 1
   maxBonds: 1

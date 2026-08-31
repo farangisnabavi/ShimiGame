@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Osmium
   symbol: Os
   atomicNumber: 76
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7329597211876302954, guid: 818d8b44ee0ab194b94b8b2e901a506a, type: 3}
   elementColor: {r: 0.15, g: 0.4, b: 0.59, a: 1}
   valenceElectrons: 2
   maxBonds: 2

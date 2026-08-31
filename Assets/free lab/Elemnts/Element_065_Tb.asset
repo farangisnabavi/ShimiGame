@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Terbium
   symbol: Tb
   atomicNumber: 65
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 804916443410973871, guid: 323698aae838eb64cad17bfde297f589, type: 3}
   elementColor: {r: 0.19, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

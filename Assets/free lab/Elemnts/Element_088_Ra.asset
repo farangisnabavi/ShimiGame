@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Radium
   symbol: Ra
   atomicNumber: 88
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 8444677534266250860, guid: fafd0aec7a3a5464ab6b06ed3de7c78d, type: 3}
   elementColor: {r: 0, g: 0.49, b: 0, a: 1}
   valenceElectrons: 2
   maxBonds: 2

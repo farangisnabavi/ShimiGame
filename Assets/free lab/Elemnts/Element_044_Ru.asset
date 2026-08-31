@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Ruthenium
   symbol: Ru
   atomicNumber: 44
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 2963841146095002189, guid: 230cce86654f89f459f2b3382777903c, type: 3}
   elementColor: {r: 0.14, g: 0.56, b: 0.56, a: 1}
   valenceElectrons: 1
   maxBonds: 2

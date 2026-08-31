@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Zirconium
   symbol: Zr
   atomicNumber: 40
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5497883277708986138, guid: 07bc10151c65ca346b535c01159d8ef6, type: 3}
   elementColor: {r: 0.58, g: 0.88, b: 0.88, a: 1}
   valenceElectrons: 2
   maxBonds: 2

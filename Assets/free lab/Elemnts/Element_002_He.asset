@@ -15,10 +15,10 @@ MonoBehaviour:
   elementName: Helium
   symbol: He
   atomicNumber: 2
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5273535562628568483, guid: 984ed5882f9132e459c19746f04d6a20, type: 3}
   elementColor: {r: 1, g: 0.75, b: 0.8, a: 1}
   valenceElectrons: 2
   maxBonds: 0
-  electronegativity: 0
+  electronegativity: 0.7
   isMetal: 0
   atomicRadius: 0.31

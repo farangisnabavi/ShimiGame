@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Titanium
   symbol: Ti
   atomicNumber: 22
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4305095818808738510, guid: 225c9f91d18cdba41a4c5a1156f8adc4, type: 3}
   elementColor: {r: 0.75, g: 0.76, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

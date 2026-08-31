@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Nickel
   symbol: Ni
   atomicNumber: 28
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6113636679376140677, guid: 08b453f6cee605944bd639789f2541bd, type: 3}
   elementColor: {r: 0.31, g: 0.82, b: 0.31, a: 1}
   valenceElectrons: 2
   maxBonds: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Bromine
   symbol: Br
   atomicNumber: 35
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6249837407837689963, guid: d8fadab8ebc4b004393e0d30f083b9d7, type: 3}
   elementColor: {r: 0.65, g: 0.16, b: 0.16, a: 1}
   valenceElectrons: 7
   maxBonds: 1

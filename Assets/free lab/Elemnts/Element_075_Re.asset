@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Rhenium
   symbol: Re
   atomicNumber: 75
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6691009125830626814, guid: 604f6827d269ffa469b491e44c86dc35, type: 3}
   elementColor: {r: 0.15, g: 0.49, b: 0.67, a: 1}
   valenceElectrons: 2
   maxBonds: 2

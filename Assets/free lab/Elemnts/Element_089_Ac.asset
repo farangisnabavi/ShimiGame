@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Actinium
   symbol: Ac
   atomicNumber: 89
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6286402439242520717, guid: 7beec80668bf14d429cd2ba761275df0, type: 3}
   elementColor: {r: 0.44, g: 0.67, b: 0.98, a: 1}
   valenceElectrons: 2
   maxBonds: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Lutetium
   symbol: Lu
   atomicNumber: 71
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7255041017512484108, guid: f7af42fcf9467e949b6d210bda4ec894, type: 3}
   elementColor: {r: 0, g: 0.67, b: 0.14, a: 1}
   valenceElectrons: 2
   maxBonds: 2

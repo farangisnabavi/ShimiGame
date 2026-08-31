@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Polonium
   symbol: Po
   atomicNumber: 84
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 511818634428594119, guid: beb30b620d7754b459e5e7cccdcf950b, type: 3}
   elementColor: {r: 0.67, g: 0.36, b: 0, a: 1}
   valenceElectrons: 6
   maxBonds: 2

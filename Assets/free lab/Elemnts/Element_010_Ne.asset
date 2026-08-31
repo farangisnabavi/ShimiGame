@@ -15,10 +15,10 @@ MonoBehaviour:
   elementName: Neon
   symbol: Ne
   atomicNumber: 10
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4569091386257359526, guid: 2834630cf07de0942beb990afb2c0527, type: 3}
   elementColor: {r: 0.7, g: 0.89, b: 0.96, a: 1}
   valenceElectrons: 8
   maxBonds: 0
-  electronegativity: 0
+  electronegativity: 0.7
   isMetal: 0
   atomicRadius: 0.38

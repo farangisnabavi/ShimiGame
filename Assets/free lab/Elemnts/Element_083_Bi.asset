@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Bismuth
   symbol: Bi
   atomicNumber: 83
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5113370691717031907, guid: 8936f4c5291867d40a9a09806d3567d6, type: 3}
   elementColor: {r: 0.62, g: 0.31, b: 0.71, a: 1}
   valenceElectrons: 5
   maxBonds: 5

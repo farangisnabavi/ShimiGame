@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Thallium
   symbol: Tl
   atomicNumber: 81
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4305095818808738510, guid: 225c9f91d18cdba41a4c5a1156f8adc4, type: 3}
   elementColor: {r: 0.65, g: 0.33, b: 0.3, a: 1}
   valenceElectrons: 3
   maxBonds: 3

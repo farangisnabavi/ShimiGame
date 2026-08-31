@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Thorium
   symbol: Th
   atomicNumber: 90
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4254545077752290247, guid: 99f9d7bb72a5f1644aa5c3ed80780070, type: 3}
   elementColor: {r: 0, g: 0.73, b: 1, a: 1}
   valenceElectrons: 2
   maxBonds: 2

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Erbium
   symbol: Er
   atomicNumber: 68
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 5290187804457917020, guid: 50dd6a01ae917dd4db4e1daec93c3c5e, type: 3}
   elementColor: {r: 0, g: 0.9, b: 0.46, a: 1}
   valenceElectrons: 2
   maxBonds: 2

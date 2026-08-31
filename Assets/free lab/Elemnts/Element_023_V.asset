@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Vanadium
   symbol: V
   atomicNumber: 23
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 8051676130126810772, guid: 0fec4933de1a2cd47a8e2ffc6ef13820, type: 3}
   elementColor: {r: 0.65, g: 0.65, b: 0.67, a: 1}
   valenceElectrons: 2
   maxBonds: 2

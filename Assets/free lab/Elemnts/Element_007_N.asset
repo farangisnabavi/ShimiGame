@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Nitrogen
   symbol: N
   atomicNumber: 7
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4260606429519616004, guid: e73970845a51dc247bbc5971dbd6268a, type: 3}
   elementColor: {r: 0.19, g: 0.31, b: 0.97, a: 1}
   valenceElectrons: 5
   maxBonds: 3

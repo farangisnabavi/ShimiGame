@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Gadolinium
   symbol: Gd
   atomicNumber: 64
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7026587550653056525, guid: f02bd2d8c6b40984ca76a88c31ac14e3, type: 3}
   elementColor: {r: 0.27, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

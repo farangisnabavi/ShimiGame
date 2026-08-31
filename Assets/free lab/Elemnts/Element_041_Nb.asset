@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Niobium
   symbol: Nb
   atomicNumber: 41
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3551987984169987970, guid: 5bb05fd557dd0724ba61f963bbda1d64, type: 3}
   elementColor: {r: 0.45, g: 0.76, b: 0.79, a: 1}
   valenceElectrons: 2
   maxBonds: 2

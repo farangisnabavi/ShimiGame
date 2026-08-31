@@ -8,6 +8,7 @@ namespace PeriodicTableSystem.Spawning
     {
         [Header("Settings")]
         [SerializeField] private float spawnHeightOffset = 0.5f;
+        [SerializeField] private GameObject panel;
         
         public GameObject SpawnElement(PeriodicElementData data, Vector3 position)
         {
@@ -24,7 +25,20 @@ namespace PeriodicTableSystem.Spawning
             if (instance.GetComponent<PeriodicWorldElementDrag>() == null)
                 instance.AddComponent<PeriodicWorldElementDrag>();
             
-            return instance;
+            panel.SetActive(false);
+            
+            return instance;}
+            
+        private PeriodicElementData selectedElement;
+
+        public void SetSelectedElement(PeriodicElementData element)
+        {
+            selectedElement = element;
+            Debug.Log($"Selected: {element?.elementName}");
+        }
+
+        public PeriodicElementData GetSelectedElement() => selectedElement;
+
         }
     }
-}
+

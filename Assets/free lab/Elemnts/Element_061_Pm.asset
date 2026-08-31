@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Promethium
   symbol: Pm
   atomicNumber: 61
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 132511325524815240, guid: 6647171058ab0ff42a1181cc0cf37a48, type: 3}
   elementColor: {r: 0.64, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

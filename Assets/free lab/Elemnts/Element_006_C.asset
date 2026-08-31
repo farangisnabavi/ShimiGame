@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Carbon
   symbol: C
   atomicNumber: 6
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3129901972350524315, guid: 0c8c1ba7a31e2214b8290c5f2a3cf2d4, type: 3}
   elementColor: {r: 0.56, g: 0.56, b: 0.56, a: 1}
   valenceElectrons: 4
   maxBonds: 4

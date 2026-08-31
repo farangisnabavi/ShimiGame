@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Scandium
   symbol: Sc
   atomicNumber: 21
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3122355863183830016, guid: d6d919392d548414083d78c2095a7807, type: 3}
   elementColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   valenceElectrons: 2
   maxBonds: 2

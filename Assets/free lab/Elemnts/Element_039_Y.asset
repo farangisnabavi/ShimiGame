@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Yttrium
   symbol: Y
   atomicNumber: 39
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6220348096638681357, guid: 4a2904764e35622498eaeab4940c9968, type: 3}
   elementColor: {r: 0.58, g: 1, b: 1, a: 1}
   valenceElectrons: 2
   maxBonds: 2

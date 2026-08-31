@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Fluorine
   symbol: F
   atomicNumber: 9
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 7287893920969521251, guid: 3a6699633f63a45488fd8d4127545edb, type: 3}
   elementColor: {r: 0.56, g: 0.88, b: 0.31, a: 1}
   valenceElectrons: 7
   maxBonds: 1

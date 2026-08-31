@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Lead
   symbol: Pb
   atomicNumber: 82
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 6512913034663360060, guid: cb7558774fb3f764a8939a21352305fa, type: 3}
   elementColor: {r: 0.34, g: 0.35, b: 0.38, a: 1}
   valenceElectrons: 4
   maxBonds: 4

@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Magnesium
   symbol: Mg
   atomicNumber: 12
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 3135857532052877218, guid: b72cd51e5e9b2ed498d000e05648c2d7, type: 3}
   elementColor: {r: 0.54, g: 1, b: 0, a: 1}
   valenceElectrons: 2
   maxBonds: 2

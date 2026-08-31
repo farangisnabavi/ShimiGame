@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Cerium
   symbol: Ce
   atomicNumber: 58
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 588575263310053035, guid: 87fc734332a108d40be3ff4d0aa15171, type: 3}
   elementColor: {r: 1, g: 1, b: 0.78, a: 1}
   valenceElectrons: 2
   maxBonds: 2

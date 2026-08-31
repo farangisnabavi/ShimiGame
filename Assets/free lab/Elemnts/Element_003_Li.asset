@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Lithium
   symbol: Li
   atomicNumber: 3
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 4574620898047821896, guid: faee3aa5084761248958c04bd03ef1e9, type: 3}
   elementColor: {r: 0.8, g: 0.5, b: 1, a: 1}
   valenceElectrons: 1
   maxBonds: 1

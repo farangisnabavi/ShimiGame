@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Ytterbium
   symbol: Yb
   atomicNumber: 70
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 8371713952917354358, guid: 974c717cc1737df43841a7bd0513366a, type: 3}
   elementColor: {r: 0, g: 0.75, b: 0.22, a: 1}
   valenceElectrons: 2
   maxBonds: 2

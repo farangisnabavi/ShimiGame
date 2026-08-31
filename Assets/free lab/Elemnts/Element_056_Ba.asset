@@ -15,7 +15,7 @@ MonoBehaviour:
   elementName: Barium
   symbol: Ba
   atomicNumber: 56
-  prefab3D: {fileID: 0}
+  prefab3D: {fileID: 1013683411564294085, guid: 0421f24d0b3273c4ea0f30e829ab1006, type: 3}
   elementColor: {r: 0, g: 0.79, b: 0, a: 1}
   valenceElectrons: 2
   maxBonds: 2
