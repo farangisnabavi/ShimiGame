@@ -94,6 +94,7 @@ public class SnapSystem3D : MonoBehaviour
 
             // Notify any listening scripts that snapping has completed
             OnSnapped?.Invoke();
+            Debug.Log("SNAP COMPLETED - EVENT FIRED");
         }
     }
 }
