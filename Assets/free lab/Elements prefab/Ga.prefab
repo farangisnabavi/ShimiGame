@@ -745,6 +745,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8771091787928289351, guid: f45f59fafb03b2c47bfc08bf28d4cac2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3677989361202078404}
+    - targetCorrespondingSourceObject: {fileID: 8771091787928289351, guid: f45f59fafb03b2c47bfc08bf28d4cac2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2060067237915740088}
+    - targetCorrespondingSourceObject: {fileID: 8771091787928289351, guid: f45f59fafb03b2c47bfc08bf28d4cac2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4514470270003014476}
   m_SourcePrefab: {fileID: -4161369568681901532, guid: f45f59fafb03b2c47bfc08bf28d4cac2, type: 3}
 --- !u!1 &7354484639930199821 stripped
 GameObject:
@@ -815,3 +821,29 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 11
   m_Center: {x: 5.5, y: 0, z: 8}
+--- !u!114 &-2060067237915740088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354484639930199821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99434fe797da00142a491069c4a10fff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeriodicTableSystem.Chemistry.AtomProximityDetector
+  proximityRadius: 2
+--- !u!114 &-4514470270003014476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354484639930199821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5944e074b7a0d864c8b22e007941ac17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PeriodicTableSystem.World.PeriodicElementInstance
+  elementData: {fileID: 11400000, guid: 1609c2dd1b2c955428f3de07a12afd3e, type: 2}

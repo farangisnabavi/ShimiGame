@@ -16,6 +16,9 @@ namespace PeriodicTableSystem.World
         {
             mainCamera = Camera.main;
             rb = GetComponent<Rigidbody>();
+
+            if (rb != null)
+                rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
         }
 
         void OnMouseDown()
@@ -49,7 +52,7 @@ namespace PeriodicTableSystem.World
         void OnMouseUp()
         {
             isDragging = false;
-            if (rb != null) rb.isKinematic = false;
+            if (rb != null) rb.isKinematic = true;
         }
     }
 }

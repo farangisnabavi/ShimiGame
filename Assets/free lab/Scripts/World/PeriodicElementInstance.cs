@@ -1,63 +1,106 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PeriodicTableSystem.Data;
+using PeriodicTableSystem.Chemistry;
 
 namespace PeriodicTableSystem.World
 {
     public class PeriodicElementInstance : MonoBehaviour
     {
-        public PeriodicElementData ElementData { get; private set; }
-        
-        [SerializeField] private int currentBonds = 0;
-        [SerializeField] private List<PeriodicElementInstance> bondedNeighbors = new List<PeriodicElementInstance>();
-        
-        public int CurrentBonds => currentBonds;
-        public IReadOnlyList<PeriodicElementInstance> BondedNeighbors => bondedNeighbors;
+        [SerializeField] private PeriodicElementData elementData;
+
+        private readonly List<Bond> activeBonds = new List<Bond>();
+
+        public PeriodicElementData ElementData => elementData;
+
+        public IReadOnlyList<Bond> ActiveBonds => activeBonds;
+
+        public int CurrentBondCount => activeBonds.Count;
+
+        public bool CanBond =>
+            elementData != null &&
+            CurrentBondCount < elementData.maxBonds;
 
         public void AssignElementData(PeriodicElementData data)
         {
-            ElementData = data;
-            currentBonds = 0;
-            bondedNeighbors.Clear();
-            // هیچ کد مربوط به رنگ اینجا نیست!
+            elementData = data;
+            activeBonds.Clear();
         }
 
-        public bool CanBond() => ElementData != null && currentBonds < ElementData.maxBonds;
-        
-        public bool IsStable() => ElementData != null && currentBonds >= ElementData.maxBonds;
-        
-        public int GetBondDeficit() => ElementData == null ? 0 : ElementData.maxBonds - currentBonds;
-
-        public bool TryBondWith(PeriodicElementInstance other)
+        public void RegisterBond(Bond bond)
         {
-            if (other == null || other == this) return false;
-            if (!CanBond() || !other.CanBond()) return false;
-            if (bondedNeighbors.Contains(other)) return false;
-            
-            bondedNeighbors.Add(other);
-            other.bondedNeighbors.Add(this);
-            currentBonds++;
-            other.currentBonds++;
-            
-            return true;
+            if (bond == null)
+                return;
+
+            if (!activeBonds.Contains(bond))
+            {
+                activeBonds.Add(bond);
+            }
         }
 
-        public void BreakBondWith(PeriodicElementInstance other)
+        public void UnregisterBond(Bond bond)
         {
-            if (!bondedNeighbors.Contains(other)) return;
-            bondedNeighbors.Remove(other);
-            other.bondedNeighbors.Remove(this);
-            currentBonds--;
-            other.currentBonds--;
+            if (bond == null)
+                return;
+
+            activeBonds.Remove(bond);
         }
-        
-        void OnDrawGizmosSelected()
+
+        public bool HasBondWith(PeriodicElementInstance other)
         {
-            if (ElementData == null) return;
+            if (other == null)
+                return false;
+
+            foreach (Bond bond in activeBonds)
+            {
+                if (bond == null)
+                    continue;
+
+                if (bond.AtomA == other || bond.AtomB == other)
+                    return true;
+            }
+
+            return false;
+        }
+
+        public int GetBondDeficit()
+        {
+            if (elementData == null)
+                return 0;
+
+            return Mathf.Max(0, elementData.maxBonds - CurrentBondCount);
+        }
+
+        public bool IsStable()
+        {
+            return elementData != null &&
+                   CurrentBondCount >= elementData.maxBonds;
+        }
+
+        private void OnDrawGizmosSelected()
+        {
             Gizmos.color = Color.white;
-            foreach (var neighbor in bondedNeighbors)
-                if (neighbor != null) 
-                    Gizmos.DrawLine(transform.position, neighbor.transform.position);
+
+            foreach (Bond bond in activeBonds)
+            {
+                if (bond == null)
+                    continue;
+
+                PeriodicElementInstance other = null;
+
+                if (bond.AtomA == this)
+                    other = bond.AtomB;
+                else if (bond.AtomB == this)
+                    other = bond.AtomA;
+
+                if (other != null)
+                {
+                    Gizmos.DrawLine(
+                        transform.position,
+                        other.transform.position
+                    );
+                }
+            }
         }
     }
 }
