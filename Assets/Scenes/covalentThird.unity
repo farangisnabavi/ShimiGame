@@ -225,6 +225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sodium
       objectReference: {fileID: 0}
+    - target: {fileID: 3675031469589658765, guid: 807d3d331436c3d4393f4c38364fbfa3, type: 3}
+      propertyPath: dragLimitController
+      value: 
+      objectReference: {fileID: 940600708}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -671,6 +675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4848250060355486515, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
+      propertyPath: dragLimitController
+      value: 
+      objectReference: {fileID: 940600708}
     - target: {fileID: 6799441199128273206, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
       propertyPath: m_Name
       value: F
@@ -703,6 +711,7 @@ GameObject:
   - component: {fileID: 940600706}
   - component: {fileID: 940600705}
   - component: {fileID: 940600704}
+  - component: {fileID: 940600708}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -783,6 +792,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &940600708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940600703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458356e4cb978904fb5eef74143829a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragLimitController
+  maxDrags: 7
 --- !u!1001 &1001314863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -843,6 +865,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4848250060355486515, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
+      propertyPath: dragLimitController
+      value: 
+      objectReference: {fileID: 940600708}
     - target: {fileID: 6799441199128273206, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
       propertyPath: m_Name
       value: F (2)
@@ -918,6 +944,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4848250060355486515, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
+      propertyPath: dragLimitController
+      value: 
+      objectReference: {fileID: 940600708}
     - target: {fileID: 6799441199128273206, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
       propertyPath: m_Name
       value: F (3)
@@ -1084,6 +1114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carbon
       objectReference: {fileID: 0}
+    - target: {fileID: 2741883250169319079, guid: 3c16518f778b8d340a6392a1918c7f8e, type: 3}
+      propertyPath: dragLimitController
+      value: 
+      objectReference: {fileID: 940600708}
     - target: {fileID: 3781542559573143925, guid: 3c16518f778b8d340a6392a1918c7f8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.46
@@ -1384,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4848250060355486515, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
+      propertyPath: dragLimitController
+      value: 
+      objectReference: {fileID: 940600708}
     - target: {fileID: 6799441199128273206, guid: cef7d3b49c76ae84ba1b1baf1e36cda6, type: 3}
       propertyPath: m_Name
       value: F (1)
@@ -1619,6 +1657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neon
       objectReference: {fileID: 0}
+    - target: {fileID: 3569290304185016278, guid: 084e5a895edaf1a418ab3078b8869c3c, type: 3}
+      propertyPath: dragLimitController
+      value: 
+      objectReference: {fileID: 940600708}
     - target: {fileID: 5407026283305684396, guid: 084e5a895edaf1a418ab3078b8869c3c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.37
