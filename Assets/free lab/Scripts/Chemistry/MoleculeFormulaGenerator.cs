@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using PeriodicTableSystem.World;
 
@@ -9,6 +10,7 @@ namespace PeriodicTableSystem.Chemistry
     {
         [Header("References")]
         [SerializeField] private BondManager bondManager;
+        [SerializeField] private TMP_Text text;
 
         private void OnEnable()
         {
@@ -90,6 +92,7 @@ namespace PeriodicTableSystem.Chemistry
                 $"<color=green>[FormulaGenerator] MOLECULE FORMULA → {formula}</color>",
                 this
             );
+            text.text =  formula;
         }
 
         private List<PeriodicElementInstance> FindConnectedAtoms(

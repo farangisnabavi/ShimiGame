@@ -12,28 +12,58 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectLevel.unity
     guid: 7a943bdfe2ddf6a4a9928606cb43b040
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/matchfirst.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/IonicFirst.unity
     guid: 3a9b13988a856794597613a15e6b0946
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/colvalentFirst.unity
     guid: 8094c8a2342041b4982f10de04e4d52d
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
+    path: Assets/Scenes/CovalentSecond.unity
     guid: 8c4f79f55d0f82343b9ad6380bb5e21d
   - enabled: 1
-    path: Assets/Scenes/Level5.unity
+    path: Assets/Scenes/matchsecond.unity
     guid: 7669db7635fb8b54e95a6e96dceaabdc
   - enabled: 1
-    path: Assets/Scenes/Level6.unity
+    path: Assets/Scenes/ionicsecond.unity
     guid: 176f7d92c676c0946912ee4f27f63039
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level7.unity
     guid: 2fc021e4dbb8fab48aa40bbd88716411
   - enabled: 1
     path: Assets/Scenes/freelab.unity
     guid: 44a7e6dc4bd4cca428a027e2ffab6926
+  - enabled: 1
+    path: Assets/Scenes/CovalentFourth.unity
+    guid: aba8d859be492654487765a998b28544
+  - enabled: 1
+    path: Assets/Scenes/covalentThird.unity
+    guid: 6052a9fc4e3a3424992d5670361e535a
+  - enabled: 1
+    path: Assets/Scenes/IonicFourth.unity
+    guid: afcf9939c6cfe6d4aa298b18d619126f
+  - enabled: 1
+    path: Assets/Scenes/IonicThird.unity
+    guid: f1aa199274a175e439e3dbcc47f5bfee
+  - enabled: 1
+    path: Assets/Scenes/marahelkoalanci.unity
+    guid: 90633b543e306bf4f9f8fb37c4eb3391
+  - enabled: 1
+    path: Assets/Scenes/marahelTashkhis.unity
+    guid: 62189aeff908542439022a2d572a99d9
+  - enabled: 1
+    path: Assets/Scenes/marahelyony.unity
+    guid: bc868b21f7655cc4c9899f853da019bd
+  - enabled: 1
+    path: Assets/Scenes/rahnama.unity
+    guid: c74fed8febb144c40b7ef184204da84f
+  - enabled: 1
+    path: Assets/Scenes/yonikoalanci.unity
+    guid: 443e49179f777b24180ee0eaecef36ff
+  - enabled: 1
+    path: Assets/Scenes/tanavobi.unity
+    guid: c9586e73dd56d154684c293b6f19e532
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

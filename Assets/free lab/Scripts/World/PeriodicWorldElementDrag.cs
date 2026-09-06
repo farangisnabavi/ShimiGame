@@ -6,53 +6,60 @@ namespace PeriodicTableSystem.World
     {
         [SerializeField] private float dragHeight = 1f;
         [SerializeField] private LayerMask groundLayer;
-        
+
         private Camera mainCamera;
-        private bool isDragging = false;
+        private bool isDragging;
         private Rigidbody rb;
         private Vector3 offset;
-        
+
         private void Awake()
         {
             mainCamera = Camera.main;
             rb = GetComponent<Rigidbody>();
 
             if (rb != null)
-                rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+            {
+                rb.isKinematic = true;
+                rb.constraints =
+                    RigidbodyConstraints.FreezePositionY |
+                    RigidbodyConstraints.FreezeRotation;
+            }
         }
 
-        void OnMouseDown()
+        private void OnMouseDown()
         {
+            Debug.Log("ELEMENT CLICKED!");
+
             isDragging = true;
-            if (rb != null) rb.isKinematic = true;
-    
+
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer))
             {
                 offset = transform.position - hit.point;
-                offset.y = 0; 
+                offset.y = 0;
             }
         }
 
-
-        void OnMouseDrag()
+        private void OnMouseDrag()
         {
-            if (!isDragging) return;
-    
+            if (!isDragging)
+                return;
+
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+
             if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, groundLayer))
             {
-                Vector3 newPos = hit.point + offset;
-                newPos.y = dragHeight;  
-                transform.position = newPos;
+                Vector3 newPosition = hit.point + offset;
+                newPosition.y = dragHeight;
+
+                transform.position = newPosition;
             }
         }
 
-
-        void OnMouseUp()
+        private void OnMouseUp()
         {
             isDragging = false;
-            if (rb != null) rb.isKinematic = true;
         }
     }
 }
